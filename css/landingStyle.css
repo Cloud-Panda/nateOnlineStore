@@ -70,18 +70,23 @@ body{
   padding:0;
 
 }
-/*
-button{
+
+.button{
   outline: none;
-  background:rgb(20, 20, 20);
-  color:rgb(238, 228, 228);
+  background:rgb(150,62,42,0.2);
+  color:rgb(238, 228, 228)!important;
   border: none;
   padding:10px;
   border-radius: 3px;
-}*/
+}
 
 .navbar li{
   margin:5px;
+  letter-spacing: 3px;
+}
+
+.navbar a{
+  color:rgb(48, 47, 47);
 }
 
 a{
@@ -95,7 +100,7 @@ a:hover{
 #logo{
   font-size:35px;
   font-family: 'Abril Fatface', cursive;
-  margin-left:40%;
+  margin-left:20%;
 }
 
 #icon{
@@ -117,7 +122,6 @@ a:hover{
   display:flex;
   align-items: center;
   font-family: 'Muli', sans-serif;
-  transition: 1s;
 }
 
 #newin{
@@ -139,7 +143,6 @@ a:hover{
   justify-content: center;
   align-items: center;
   font-family: 'Muli', sans-serif;
-  transition: 1s;
 }
 .bottom{
   flex-grow: 1;
@@ -149,7 +152,6 @@ a:hover{
   justify-content: center;
   align-items: center;
   font-family: 'Muli', sans-serif;
-  transition: 1s;
 }
 
 .last{
@@ -160,7 +162,6 @@ a:hover{
   align-items: center;
   justify-content: right;
   font-family: 'Muli', sans-serif;
-  transition:1s;
 }
 
 #hr-first{
@@ -190,22 +191,6 @@ h2{
   letter-spacing: 10px;
 }
 
-.first:hover{
-  background:rgb(138,139,133);
-}
-
-.top:hover{
-  background:rgb(150,62,42);
-}
-
-.bottom:hover{
-  background:rgb(150,62,42);
-}
-
-.last:hover{
-  background:rgb(138,139,133);
-}
-
 .Coming-Soon{
   background-size: cover;
   /*flex-grow:2;*/
@@ -232,6 +217,7 @@ h2{
   position: relative;
 }
 
+
 #footer{
   list-style: none;
   padding-right:60px;
@@ -240,6 +226,10 @@ h2{
 
 #footer-p{
   font-size: 14px;
+}
+
+#footer a{
+  color:rgb(228, 226, 226);
 }
 
 #rights{
@@ -422,11 +412,11 @@ h2{
 .map-contact{
   display:flex;
   flex:1;
-  background:rgb(222,226,225);
+  background:rgb(192, 192, 192);
 }
 .gmap_canvas {
   overflow:hidden;
-  background: rgb(190, 190, 190);
+  background: rgb(82, 82, 82);
   height:500px;
   width:800px;
 }
@@ -559,9 +549,9 @@ input[type=text],textarea {
 }
 /* The Close Button */
 .close {
-  color: rgb(231, 224, 224);
+  color: rgb(0, 0, 0);
   position: absolute;
-  top: 10px;
+  top: 40px;
   left:90%;
   font-size: 35px;
   font-weight: bold;
@@ -589,6 +579,16 @@ input[type=text],textarea {
   margin-top:20px;
   padding:0;
   margin-bottom:40px;
+}
+
+.hover-shadow{
+  transition:1s;
+}
+
+.hover-shadow:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 /* Next & previous buttons */
@@ -646,3 +646,6 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/**************MEDIA QUERIES********************/
+

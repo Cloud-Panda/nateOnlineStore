@@ -30,9 +30,6 @@
           <a class="nav-link active" href="index.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Categories</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="checkout.php">Checkout</a>
         </li>
         <li class="nav-item">
@@ -88,10 +85,10 @@
       <?php endwhile; ?>
     </div>
   </div>
-
   <script src="lib/jquery-3.4.1.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/fontaesome.min.js"></script>
   <script src="script/script.js"></script>
 </body>
+
 </html>

@@ -16,31 +16,7 @@
 </head>
   <body>
       <div class="covid"><p id="covid-txt">STAY HOME STAY SAFE PREVENT COVID19 !! </p></div>
-        <nav class="navbar navbar-expand-md nav-back navbar-light">
-          <!-- Brand -->
-          <li><a href="index.php">Home</a></li>
-          <li id="logo">SAINT'S</li>
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="shopping.php"><img src="images/3.png" id="shopping"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="checkout.php"><img src="images/cart.png" id="carting"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="cart.php"><i class="fas fa-shopping-cart"></i> <span id="cart-item"
-              class="badge badge-danger"></span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+        <?php include("inc/header.php"); ?>
     <div class="App">
          
       <div class="first">
@@ -49,10 +25,10 @@
 
       <div class="mid">
           <div class="top">
-              <h2><a href="#contact">CONTACT</a></h2>
+              <h2><a href="contact.php">CONTACT</a></h2>
           </div>
           <div class="bottom">
-              <h2><a href="">LOCATION</a></h2>
+              <h2><a href="gallery.php">GALLERY</a></h2>
           </div>
       </div>
 
@@ -114,75 +90,12 @@
       </div>
 
       <div class="Featured">
-          <h3 id="customer-txt">Customer Favourites</h3>
+          <h3 id="customer-txt">Featured Products</h3>
           <div class="features"><img src="images/9.jpg" alt="" id="feature-img"><div class="middle"><a href="shopping.php"><p class="text">Shop</p></a></div></div>
           <div class="features"><img src="images/21 (1).png" alt="" id="feature-img"><div class="middle"><a href="shopping.php"><p class="text">Shop</p></a></div></div>
           <div class="features"><img src="images/30 (2).jpg" alt="" id="feature-img"><div class="middle"><a href="shopping.php"><p class="text">Shop</p></a></div></div>
           <div class="features"><img src="images/19 (1).png" alt="" id="feature-img"><div class="middle"><a href="shopping.php"><p class="text">Shop</p></a></div></div>
       </div>
-
-      <div class="gallery">
-      <h2 id="gallery-title">Our most recent additions</h2>
-<div class="row">
-
-  <div class="column">
-    <img src="images/21 (10).jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/19 (6).jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/30 (4).jpg"onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="images/1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="images/21 (10).jpg" id="modal-img">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="images/19 (6).jpg" id="modal-img">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="images/30 (4).jpg" id="modal-img">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="images/1.jpg" id="modal-img">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-</div>
-    </div>
-
-<div class="map-contact">
-<div class="gmap_canvas">
-<iframe id="gmap_canvas" src="https://maps.google.com/maps?ll=-33.924998,18.4486469&q=Old Castle Brewery&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-</iframe>
-</div>
-
-  <form id="contact-form">
-  <h2 id="contact">- ContactUs -</h2>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    <input type="text" id="email" name="email" placeholder="Your email..">
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-     <button class="contact-btn">Send</button>
-  </form>
-</div>
 
       <?php include("inc/footer.php");?>
       
@@ -192,7 +105,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script/gallery.js"></script>
 </body>
 
 </html>

@@ -16,39 +16,16 @@
 </head>
   <body>
 
-  <nav class="navbar navbar-expand-md nav-back navbar-light">
-          <!-- Brand -->
-          <li><a href="index.php">Home</a></li>
-          <li id="logo">SAINT'S</li>
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="shopping.php"><img src="images/3.png" id="shopping"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="checkout.php"><img src="images/cart.png" id="carting"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="cart.php"><i class="fas fa-shopping-cart"></i> <span id="cart-item"
-              class="badge badge-danger"></span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+  <?php include("inc/header.php"); ?>
     <div class="wrapper">
         <div class="team-img"></div>
         <div class="about">
             <div id="its-txt">
             <hr><h1>About Us</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quaerat ducimus, esse iusto praesentium <br>
-            laborum quo ea suscipit quibusdam delectus quos ullam tenetur<br> molestiae molestias eius est consectetur <br>
-            veritatis voluptate dolore? </p>
+            <p>Saint's is here to offer you a helping hand, so that you can <br><i>chair</i> less and focus on what <i>mattress</i>
+            more.<br> Here at Saint's we deal with everything so that you don't have to.<br>From bedrooms to bathrooms-the only 'one night stand'<br>
+            you'll be proud of having.<br> Our catalogues are swoon worthy and we will walk you through every step, <br>so that you can 
+            truly live in comfort and style. </p>
             <button id="btn"><a href="index.php#contact">Let's Chat</a></button>
             <hr>
 </div>
@@ -73,15 +50,15 @@
     <div class="more-box">
         <div id="journey">
             <h3><hr>How we got here</h3><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Mollitia modi rerum quibusdam
-            consequuntur id? Nihil quos eos iusto <br>placeat provident deserunt! Iste cum dolore odit 
-            id sapiente tempore officia? Dolor?</p><br>
+            <p>On July 1st 2004, Nate Cage, CEO and founder of Saint's put together a brilliant team.<br> From working in a small
+            office space we expanded into this amazing online franchise.<br>With patients and hard work Saint's has become well known 
+            and a staple for interior designers.</p><br>
         </div>
         <div id="charity">
             <h3><hr>How we give back</h3><br>
-           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Mollitia modi rerum quibusdam
-            consequuntur id? Nihil quos eos iusto <br>placeat provident deserunt! Iste cum dolore odit 
-            id sapiente tempore officia? Dolor?</p><br>
+           <p>Here at Saint's we 100% believe in giving back to our community and country.<br> How we at Saint's give back is 
+            by donating a R5 from every purchase you as our  <br>customer makes. By doing this we invest in our country and
+            in humanity to enrich the lives of every living being.</p><br>
         </div>
     </div>
 <?php include("inc/footer.php");?>
