@@ -113,7 +113,11 @@ a:hover{
   background-color: white;
   flex-grow: 1;
 }
-
+.Pics{
+  flex:1;
+  display:flex;
+  width: 10%;
+}
 .first{
   flex-grow:2;
   height:90vh;
@@ -194,6 +198,7 @@ h2{
 .Coming-Soon{
   background-size: cover;
   /*flex-grow:2;*/
+  display:flex;
   min-height:90vh;
   width:100%;
 
@@ -649,3 +654,68 @@ img.hover-shadow {
 
 /**************MEDIA QUERIES********************/
 
+
+@media only screen and (max-width:1073px)
+{
+  .Pics{
+    width:360px;
+    flex-direction: column;
+  }
+  .Coming-Soon{
+    display: flex;
+    flex-direction: column;
+  }
+  .Coming-Soon .left{
+    overflow-y: auto;
+    flex:1;
+    height:90px;
+  }
+  .map-contact{
+    flex-direction: column;
+    
+  }
+  .gmap_canvas{
+    width: 100%;
+  }
+  #contact-form{
+    width: 85%;
+  }
+  .footer{
+    display: flex;
+  }
+  #footer
+  {
+    flex:1;
+  }
+}
+
+@media only screen and (max-width:360px)
+{
+  .Pics{
+    width:360px;
+    flex-direction: column;
+  }
+  .Coming-Soon{
+    display: flex;
+    flex-direction: column;
+  }
+  .Coming-Soon .left{
+    overflow-y: auto;
+    flex:1;
+    height:90px;
+  }
+  .map-contact{
+    flex-direction: column;
+    
+  }
+  #contact-form{
+    width: 85%;
+  }
+  .footer{
+    display: flex;
+  }
+  #footer
+  {
+    flex:1;
+  }
+}

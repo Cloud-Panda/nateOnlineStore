@@ -18,8 +18,8 @@
       <div class="covid"><p id="covid-txt">STAY HOME STAY SAFE PREVENT COVID19 !! </p></div>
         <?php include("inc/header.php"); ?>
     <div class="App">
-         
-      <div class="first">
+        <div class="Pics">
+        <div class="first">
           <hr id="hr-first"><h2 id="newin"><a href="about.php">ABOUT</a></h2>
       </div>
 
@@ -35,10 +35,14 @@
       <div class="last">
       <hr id="hr-last"> <h2 id="plus"><a href="shopping.php">SHOP</a></h2>
       </div>
+        </div>
+
+      
 
   </div>
-
+    
   <div class="Coming-Soon">
+
       <div class="left">
           <h1 id="header">Saint's Kitchen!</h1>
           <p id="description">
